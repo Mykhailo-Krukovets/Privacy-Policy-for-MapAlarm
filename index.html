@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MapAlarm</title>
+  <meta name="description" content="Privacy Policy for MapAlarm, a location-based alarm clock for Android.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --accent: #1565c0;
+      --border: #e0e0e0;
+      --summary-bg: #e3f2fd;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --surface: #1e1e1e;
+        --text: #e8e8e8;
+        --text-muted: #aaa;
+        --accent: #64b5f6;
+        --border: #333;
+        --summary-bg: #1a2733;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      line-height: 1.25;
+    }
+
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .intro {
+      margin: 1.25rem 0 0;
+      color: var(--text-muted);
+    }
+
+    .summary {
+      background: var(--summary-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .summary h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .summary ul {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 2.25rem 0 0.75rem;
+      padding-top: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem;
+      padding-left: 1.4rem;
+    }
+
+    li {
+      margin: 0.35rem 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy for MapAlarm</h1>
+      <p class="effective-date"><strong>Effective date:</strong> July 29, 2026</p>
+      <p class="intro">MapAlarm ("the app", "we", "us") is a location-based alarm clock for Android. This policy explains exactly what the app does with your data, what leaves your device, and how you can stop it.</p>
+    </header>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li>There is no MapAlarm account, and we operate no server of our own.</li>
+        <li>Your alarms, saved places, search history and settings never leave your device.</li>
+        <li>Coordinates and search text are sent to Google Maps Platform so the app can show maps, resolve addresses and render place previews.</li>
+        <li>Optional crash reports and anonymous usage statistics are sent to Google Firebase. You can switch this off in <strong>Settings → About → Send anonymous diagnostics</strong>.</li>
+        <li>We do not sell or share your data, we show no advertising, and we do not build a profile of where you go.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1. Data the app handles</h2>
+
+      <h3>1.1 Location data</h3>
+      <ul>
+        <li><strong>Foreground location</strong> shows your current position on the map and lets you place alarm points precisely.</li>
+        <li><strong>Background location</strong> is the core function: the app keeps checking your position while the screen is off or while you use other apps, so an alarm can fire when you arrive at or leave a place. Tracking runs in a foreground service with a persistent notification, and only while at least one alarm is active or scheduled.</li>
+        <li>Positions are evaluated in memory and are <strong>not</strong> written to any location history. The app stores only the coordinates of the places you choose yourself.</li>
+      </ul>
+
+      <h3>1.2 Physical activity</h3>
+      <p>With your permission, the app uses Android Activity Recognition to detect whether you are stationary or moving and to lower the GPS update rate accordingly. This is used purely to save battery and is processed on your device.</p>
+
+      <h3>1.3 Data stored on your device</h3>
+      <p>Stored locally in a Room database and in the app's private preferences:</p>
+      <ul>
+        <li>Alarms: coordinates, radius, name, address, trigger type, schedule.</li>
+        <li>Search history: the last 50 places you looked up.</li>
+        <li>A cache of place details, map images and Street View thumbnails, deleted automatically after 30 days.</li>
+        <li>Settings: ringtone, volume, vibration, theme, language, marker colours, radius defaults.</li>
+      </ul>
+      <p>Android backup is disabled for this app (<code>allowBackup=false</code>), so none of this is copied into your Google account backup.</p>
+    </section>
+
+    <section>
+      <h2>2. Data that leaves your device</h2>
+
+      <h3>2.1 Google Maps Platform (Google LLC)</h3>
+      <p>Required for the app to function. The app sends requests to Google containing:</p>
+      <ul>
+        <li>the coordinates you tap, save or move to, for reverse geocoding (<code>geocode/json</code>), static map images (<code>staticmap</code>) and Street View availability and thumbnails (<code>streetview</code>);</li>
+        <li>the text you type in search, plus a nearby location bias, through the Google Places SDK (autocomplete and place details);</li>
+        <li>the map viewport and your position while the interactive map is displayed, through the Google Maps SDK for Android.</li>
+      </ul>
+      <p>Google processes these requests under its own privacy policy, including for service delivery and abuse prevention: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. See also the <a href="https://cloud.google.com/maps-platform/terms" rel="noopener">Google Maps Platform Terms of Service</a>.</p>
+
+      <h3>2.2 Firebase Crashlytics (Google LLC) — optional</h3>
+      <p>If crash reporting is on and the app crashes or hits an error, Crashlytics receives a stack trace, device model, Android version, app version, locale, available memory and storage, a randomly generated installation identifier, and the app's own diagnostic log lines (for example the current GPS polling interval). <strong>Crash reports contain no coordinates, addresses or alarm names.</strong></p>
+
+      <h3>2.3 Firebase Analytics (Google LLC) — optional</h3>
+      <p>If diagnostics are on, Firebase Analytics reports automatically collected events such as app opens, session length, screen views, app updates and crashes, together with device model, OS version, app version, language and an approximate country derived from your IP address, tied to a pseudonymous app instance identifier. <strong>No precise location, address or search query is sent to Analytics.</strong></p>
+
+      <h3>2.4 Turning the optional collection off</h3>
+      <p><strong>Settings → About → Send anonymous diagnostics</strong> disables both Crashlytics and Analytics collection immediately and permanently until you turn it back on. Google Play services and the Maps requests in section 2.1 cannot be disabled without making the app unusable; if you do not want them, please stop using the app.</p>
+    </section>
+
+    <section>
+      <h2>3. What we never do</h2>
+      <ul>
+        <li>No advertising, no ad identifiers, no ad networks.</li>
+        <li>No selling or sharing of personal data, in the sense of the CCPA/CPRA or otherwise.</li>
+        <li>No user accounts, sign-in, email collection or contact list access.</li>
+        <li>No upload of your alarms, saved places or movement history to us or to anyone else.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Legal bases (GDPR)</h2>
+      <p>For users in the EEA, the UK and Switzerland:</p>
+      <ul>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b)) for location processing and Maps requests: without them the app cannot deliver the alarm function you asked for.</li>
+        <li><strong>Consent</strong> (Art. 6(1)(a)) for the Android runtime permissions themselves, granted through the system dialogs and revocable at any time in Android settings.</li>
+        <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) for crash reporting and anonymous usage statistics, namely keeping the app stable. You can object at any time using the diagnostics switch described in section 2.4, with no loss of functionality.</li>
+      </ul>
+      <p>The developer of MapAlarm is the controller for the processing described here. Google LLC acts as our processor for Firebase and as an independent controller for Google Maps Platform.</p>
+    </section>
+
+    <section>
+      <h2>5. International transfers</h2>
+      <p>Firebase and Google Maps Platform process data on Google infrastructure that may be located outside your country, including in the United States. Google relies on the European Commission's Standard Contractual Clauses and on the EU–US Data Privacy Framework for those transfers.</p>
+    </section>
+
+    <section>
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li>Cached place details, map images and Street View thumbnails: deleted automatically 30 days after they were stored.</li>
+        <li>Search history: capped at the 50 most recent entries; older entries are dropped. Individual entries can be removed from the search panel.</li>
+        <li>Alarms and settings: kept until you delete them in the app.</li>
+        <li><strong>To erase everything at once:</strong> Android Settings → Apps → MapAlarm → Storage → Clear storage, or simply uninstall the app. Because all of this data lives only on your device, uninstalling deletes it irreversibly.</li>
+        <li>Crashlytics reports are retained by Google for up to 90 days; Analytics data is retained for 2 months (the shortest period Google offers) and is then deleted. Switching diagnostics off stops any further collection.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Your rights</h2>
+      <p>Depending on where you live you may have the right to access, correct, delete, restrict or object to the processing of your personal data, and to receive it in a portable form. Since alarms, places, search history and settings are stored only on your device, you can exercise all of these directly in the app and in Android settings without contacting us.</p>
+      <p>For the pseudonymous diagnostics data held by Google on our behalf, contact us (section 10) and we will act on your request. EEA and UK users also have the right to lodge a complaint with their national data protection authority. California residents have the right to know, delete and correct their personal information and to non-discrimination; we do not sell or share personal information and have not done so in the preceding 12 months.</p>
+    </section>
+
+    <section>
+      <h2>8. Children</h2>
+      <p>MapAlarm is not directed to children. We do not knowingly collect personal data from children under 13 (or under 16 in the EEA). The app has no social features, no user-generated content visible to others and no advertising. If you believe a child has provided data through the optional diagnostics, contact us and we will have it deleted.</p>
+    </section>
+
+    <section>
+      <h2>9. Permissions</h2>
+      <p>Requested with a system dialog:</p>
+      <ul>
+        <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code> — locating you and evaluating alarm zones.</li>
+        <li><code>ACCESS_BACKGROUND_LOCATION</code> — triggering alarms while the app is not in the foreground.</li>
+        <li><code>POST_NOTIFICATIONS</code> — alarm alerts, the tracking notification and status messages.</li>
+        <li><code>ACTIVITY_RECOGNITION</code> — battery-saving detection of whether you are moving.</li>
+        <li><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code> — starting and stopping tracking at scheduled times.</li>
+        <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> — asking to be exempted from battery restrictions so tracking is not killed.</li>
+      </ul>
+      <p>Granted automatically because they carry no privacy risk:</p>
+      <ul>
+        <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>, <code>FOREGROUND_SERVICE_SHORT_SERVICE</code> — running the tracking service visibly.</li>
+        <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> — map tiles and Google requests.</li>
+        <li><code>ACCESS_WIFI_STATE</code>, <code>CHANGE_WIFI_STATE</code> — letting Android improve location accuracy from Wi-Fi scans; the app never reads your network list.</li>
+        <li><code>WAKE_LOCK</code>, <code>VIBRATE</code>, <code>MODIFY_AUDIO_SETTINGS</code>, <code>USE_FULL_SCREEN_INTENT</code> — waking the screen and playing the alarm reliably.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code> — restoring active alarms after a reboot.</li>
+      </ul>
+      <p>Location and notification permissions can be revoked at any time in Android settings. Revoking location disables the alarm function entirely.</p>
+    </section>
+
+    <section>
+      <h2>10. Security</h2>
+      <p>All personal data stays in the app's private storage, protected by Android's application sandbox and by your device lock screen. Network traffic uses HTTPS only; cleartext traffic is disabled at the platform level. Release builds are code-shrunk and obfuscated. No system is perfectly secure, but the app holds no server-side copy of your data that could be breached.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this policy when the app changes. The effective date above marks the current version, and the latest text is always available inside the app under <strong>Settings → About → Privacy Policy</strong>. Material changes will be announced in the release notes.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>Questions, requests or privacy complaints: use the <strong>Developer contact</strong> section on the MapAlarm listing in Google Play, or the "Send feedback about this app" link on that page. We respond within 30 days.</p>
+    </section>
+
+    <footer>
+      <p>MapAlarm — location-based alarm clock for Android</p>
+    </footer>
+  </div>
+</body>
+</html>

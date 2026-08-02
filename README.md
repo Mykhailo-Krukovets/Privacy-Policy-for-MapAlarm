@@ -1,5 +1,7 @@
 # Privacy Policy for MapAlarm
 
+**Live page:** [mykhailo-krukovets.github.io/Privacy-Policy-for-MapAlarm](https://mykhailo-krukovets.github.io/Privacy-Policy-for-MapAlarm/)
+
 **Effective date: July 29, 2026**
 
 MapAlarm ("the app", "we", "us") is a location-based alarm clock for Android. This policy explains exactly what the app does with your data, what leaves your device, and how you can stop it.
